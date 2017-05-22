@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Shoppe</title>
+    <link rel='stylesheet' href='/stylesheet/style.css' />
+  </head>
+  <body>
+    <h1>Welcome to The Stationary Store</h1>
+    <h3>Products</h3>
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Usefulness Rating</td>
+          <td>Price</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i=0; i < dataVariable.items.length; i++) {%>
+          <tr>
+            <td><%= dataVariable.items[i].type %></td>
+            <td><%= dataVariable.items[i].usefulness %></td>
+            <td><%= dataVariable.items[i].price %></td>
+          </tr>
+          <% } %>
+        </tbody>
+      </ul>
+    </body>
+  </html>
